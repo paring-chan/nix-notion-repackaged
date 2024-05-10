@@ -5,5 +5,9 @@
 
   outputs = { self, nixpkgs }:
     let pkgs = nixpkgs.legacyPackages.x86_64-linux;
-    in { packages.x86_64-linux.default = pkgs.callPackage ./package.nix { }; };
+    in let pkg = pkgs.callPackage ./package.nix { };
+    in {
+      packages.x86_64-linux.default = pkg;
+      packages.x86_64-linux.notion-repackaged = pkg;
+    };
 }
