@@ -33,7 +33,7 @@ stdenv.mkDerivation (finalAttrs:
         name = "notion";
         desktopName = "Notion";
         exec = "notion-app %U";
-        icon = "notion";
+        icon = "notion-app";
         startupWMClass = "Notion";
       })
     ];
