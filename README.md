@@ -1,7 +1,7 @@
 # Notion Repackaged for Nix
 
 > [!WARNING]  
-> This project may not be well maintained;
+> This project may not be well maintained.
 
 nix version of [notion-repackaged](https://github.com/dusansimic/notion-repackaged)
 
